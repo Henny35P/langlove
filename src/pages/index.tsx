@@ -1,8 +1,7 @@
-import { type NextPage } from "next";
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
-
+import { type NextPage } from "next";
 import { api } from "../utils/api";
 
 const Home: NextPage = () => {
@@ -23,7 +22,7 @@ const Home: NextPage = () => {
       <div id="secondChoice" className="relative row-span-2">
         <Image fill className="mx-auto object-contain" src={sampleimg} alt="" />
       </div>
-      <footer className="row-span-1 flex flex-row mx-4 gap-4">
+      <footer className="row-span-1 mx-4 flex flex-row gap-4">
         <div className="mx-auto">
           <Link href="https://github.com/Henny35P">
             <img
@@ -33,7 +32,7 @@ const Home: NextPage = () => {
             />
           </Link>
         </div>
-        <p className="text-justify break-before-auto text-slate-50 text-xs my-2">
+        <p className="my-2 break-before-auto text-justify text-xs text-slate-50">
           Creado por Hans Villarroel - 2022 utilizando el T3 stack.
           <br />
           El repositorio con el codigo fuente se puede encontrar aquí.

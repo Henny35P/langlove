@@ -13,3 +13,7 @@ Aplicacion Fullstack usando el [T3 Stack](https://create.t3.gg/) que permite vot
 Todo esto siendo boostrapeado por el [T3 Stack](https://create.t3.gg/)
 
 - [Documentacion](https://create.t3.gg/)
+
+Para recibir los datos sobre los lenguajes se utiliza la API de wikipedia ->
+
+https://en.wikipedia.org/w/api.php?action=opensearch&search=C|Programming&limit=10&format=json
