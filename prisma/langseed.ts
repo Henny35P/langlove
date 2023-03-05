@@ -22,9 +22,17 @@ async function createLang(lang: LangObj): Promise<void> {
 function seedLang() {
   for (const lang of langs) {
     createLang(lang)
-      .catch((err) => console.log(err))
-      .then(() => console.log("Created Lang"))
-      .catch(() => "obligatory catch");
+      .then(async () => {
+        await prisma.$disconnect();
+      })
+
+      .catch(async (e) => {
+        console.error(e);
+
+        await prisma.$disconnect();
+
+        process.exit(1);
+      });
   }
 }
 
